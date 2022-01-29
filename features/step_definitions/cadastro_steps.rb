@@ -1,15 +1,14 @@
-Dado('que acesso o cadastro de usuário') do
+Dado('que o usuario realiza um novo cadastro') do
     @cadastro_page = CadastroPage.new
+    @cadastro_page.load
   end
   
-  Dado('preencho os campos do formulário com dados válidos') do
-    pending # Write code here that turns the phrase above into concrete actions
+  Quando('ele preencher os campos do formulário com dados válidos') do
+    @cadastro_page.preencher_form
+    @cadastro_page.confirmar_form
   end
   
-  Quando('confirmo o cadastro') do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Então('o sistema deve exibir o meu ID') do
-    pending # Write code here that turns the phrase above into concrete actions
+  Então('o cadastro será realizado com sucesso') do
+    expect(@cadastro_page.confirmaCadastro_list).to have_content 'L.TESTE'
+    
   end
