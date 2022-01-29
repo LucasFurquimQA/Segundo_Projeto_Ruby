@@ -13,5 +13,5 @@ Capybara.configure do |config|
     Capybara.default_driver = :site_prism
     Capybara.page.driver.browser.manage.window.maximize
     config.default_max_wait_time = 10
-    config.app_host = 'http://www.aprendendotestar.com.br'
+    config.app_host = 'https://www.magazineluiza.com.br'
   end
