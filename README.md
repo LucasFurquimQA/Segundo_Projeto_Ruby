@@ -1,4 +1,4 @@
-# Primeiro_Projeto_Ruby
+# Segunto_Projeto_Ruby
 Meu primeiro projeto utilizando Ruby + Selenium
 
 Este projeto tem como fim treinar as habilidades de automação para testes ageis.
