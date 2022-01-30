@@ -11,7 +11,6 @@
      Cenário: Realizar pesquisa
      Dado que é realizada a pesquisa
      Quando for preenchido o campo de pesquisa
-     E confirmar a pesquisa
      E selecionar a categoria de produto
-     Então o produto deve ser mostrado
+     Então o produto 'Notebook 2AM E550 CI716256GBW10 Intel Core i7 16GB' deve ser mostrado
      
